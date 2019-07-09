@@ -10,7 +10,7 @@ export const NumberButton = (props) => {
       height: '75px',
       borderRadius: '50%',
       margin: '10px'
-      } }>
+      }  } onClick={() => props.setTotal(props.num)} >
       {props.num}
     </button>
   );
