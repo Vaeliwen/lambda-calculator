@@ -1,9 +1,17 @@
 import React from "react";
 
-const OperatorButton = () => {
+export const OperatorButton = (props) => {
   return (
-    <>
-      {/* Display a button element rendering the data being passed down from the parent container on props */}
-    </>
+    <button style={{
+    background: '#184379', 
+    color: '#ffffff',
+    border: '1px solid #184379',
+    width: '75px',
+    height: '75px',
+    borderRadius: '50%',
+    margin: '10px'
+    }  } onClick={() => {props.setOp(props.value)}}>
+      {props.op}
+    </button>
   );
 };

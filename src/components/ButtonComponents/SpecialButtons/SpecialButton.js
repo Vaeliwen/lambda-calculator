@@ -1,9 +1,17 @@
 import React from "react";
 
-const SpecialButton = () => {
+export const SpecialButton = (props) => {
   return (
-    <>
-      {/* Display a button element rendering the data being passed down from the parent container on props */}
-    </>
+    <button style={ {
+      background: '#225d9e', 
+      color: '#ffffff',
+      border: '1px solid #225d9e',
+      width: '75px',
+      height: '75px',
+      borderRadius: '50%',
+      margin: '10px'
+    }}>
+      {props.spec}
+    </button>
   );
 };

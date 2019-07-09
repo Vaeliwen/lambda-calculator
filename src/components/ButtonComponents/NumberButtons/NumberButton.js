@@ -1,9 +1,17 @@
 import React from "react";
 
-const NumberButton = () => {
+export const NumberButton = (props) => {
   return (
-    <>
-      {/* Display a button element rendering the data being passed down from the parent container on props */}
-    </>
+    <button style={ {
+      background: '#184379', 
+      color: '#ffffff',
+      border: '1px solid #184379',
+      width: '75px',
+      height: '75px',
+      borderRadius: '50%',
+      margin: '10px'
+      }  } onClick={() => props.setTotal(props.num)} >
+      {props.num}
+    </button>
   );
 };
